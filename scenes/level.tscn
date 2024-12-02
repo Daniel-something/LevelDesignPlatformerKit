@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://biq5tqo0jaeoj"]
+[gd_scene load_steps=43 format=3 uid="uid://biq5tqo0jaeoj"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_1lrdh"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_p2a8d"]
@@ -12,27 +12,17 @@
 [ext_resource type="PackedScene" uid="uid://0v6t454aaexr" path="res://objects/door.tscn" id="10_wr1ga"]
 [ext_resource type="PackedScene" uid="uid://cxea8lmw7cy1l" path="res://objects/player_kill_volume.tscn" id="11_qftdt"]
 [ext_resource type="PackedScene" uid="uid://cyvet7kb6y80r" path="res://objects/checkpoint.tscn" id="12_6susq"]
-[ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://objects/platform.tscn" id="13_mgamd"]
-[ext_resource type="PackedScene" uid="uid://rjh4ifidqrfp" path="res://objects/platform_medium.tscn" id="14_dtfo0"]
-[ext_resource type="PackedScene" uid="uid://c8up71en5djgm" path="res://objects/platform_falling.tscn" id="15_b3n3p"]
 [ext_resource type="PackedScene" uid="uid://uqr4hswv6d2g" path="res://objects/platform_grass_large_round.tscn" id="16_vf7p7"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="17_vpstx"]
 [ext_resource type="PackedScene" uid="uid://dy017k58p20sk" path="res://objects/cloud.tscn" id="18_l1goe"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="19_rb4an"]
-[ext_resource type="PackedScene" uid="uid://5ltihbra4hfb" path="res://models/props/block-grass-hexagon.glb" id="20_hcccx"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="20_vug3f"]
 [ext_resource type="LabelSettings" uid="uid://daohhjonjrdx8" path="res://themes/label_settings.tres" id="21_j1mte"]
 [ext_resource type="PackedScene" uid="uid://s1bbwujq22dg" path="res://models/props/block-grass-large-tall.glb" id="21_klkfw"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="22_drlua"]
-[ext_resource type="PackedScene" uid="uid://ct3jqgtvmr86q" path="res://models/props/block-grass-large.glb" id="22_fpryo"]
-[ext_resource type="PackedScene" uid="uid://caoqmoox7uqm7" path="res://models/props/block-grass-long.glb" id="23_jm4k7"]
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_rogj1"]
-[ext_resource type="PackedScene" uid="uid://cxrql0yx3afkn" path="res://models/props/block-grass-overhang-low-narrow.glb" id="24_jermf"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_kulek"]
-[ext_resource type="PackedScene" uid="uid://s7trom0cwf3v" path="res://models/props/block-snow-long.glb" id="25_0r7ta"]
 [ext_resource type="PackedScene" uid="uid://ytqajrdi7fqj" path="res://objects/trampoline.tscn" id="25_3lew4"]
-[ext_resource type="PackedScene" uid="uid://ciki0s3ncfulb" path="res://models/props/block-snow-large.glb" id="26_sn0fj"]
-[ext_resource type="PackedScene" uid="uid://464njxe0ii0k" path="res://models/props/block-snow-large-tall.glb" id="27_bw5tr"]
 [ext_resource type="PackedScene" uid="uid://d2if48n15feql" path="res://objects/block_grass_large_2.tscn" id="28_d78hq"]
 [ext_resource type="PackedScene" uid="uid://b65l7yar2ang2" path="res://objects/block_grass_large_tall_2.tscn" id="29_ajdrn"]
 [ext_resource type="PackedScene" uid="uid://dmequtx2oso1f" path="res://models/props/rocks.glb" id="30_23hes"]
@@ -41,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://bedrvqit55vmp" path="res://objects/wall_window_large_2.tscn" id="34_lu44u"]
 [ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="35_78n1l"]
 [ext_resource type="PackedScene" uid="uid://cmkdwrjcbf2o1" path="res://models/props/arrow.glb" id="37_48311"]
+[ext_resource type="PackedScene" uid="uid://cxgbm37quvdv8" path="res://objects/box.tscn" id="37_oonmy"]
 [ext_resource type="PackedScene" uid="uid://bul27s2ktdx0p" path="res://objects/wall_window_large_closed_2.tscn" id="42_xfegn"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
@@ -63,6 +54,20 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0)
 }
 point_count = 3
+
+[sub_resource type="Curve3D" id="Curve3D_pvnjf"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 39.1875, 17.9233, -2.69827, 0, 0, 0, 0, 0, 0, 28.6937, 6.93785, -0.694283),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_2nbvl"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 39.188, 17.923, -2.698, 0, 0, 0, 0, 0, 0, 28.694, 6.938, -0.694),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
 
 [sub_resource type="LabelSettings" id="LabelSettings_ri8jt"]
 font = ExtResource("22_drlua")
@@ -106,12 +111,6 @@ fov = 40.0
 
 [node name="World" type="Node3D" parent="."]
 
-[node name="platform-moving" parent="World" instance=ExtResource("4_07kdn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4773, 0, 0)
-
-[node name="platform-large" parent="World" instance=ExtResource("5_hsdt4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9563, 2.11817, -1.1764)
-
 [node name="platform-large3" parent="World" instance=ExtResource("5_hsdt4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9816, 5.89694, -0.565265)
 
@@ -121,31 +120,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.6019, 2.1234, -4.7616)
 [node name="block-grass-large-tall22" parent="World" instance=ExtResource("29_ajdrn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.709, 2.10371, -6.74385)
 
-[node name="platform-large2" parent="World" instance=ExtResource("5_hsdt4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.9558, 2.20127, -8.90485)
-
-[node name="moving_object_path" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_u137l")]
+[node name="moving_object_path" parent="World" instance=ExtResource("6_u137l")]
 curve = SubResource("Curve3D_5n82a")
-object_to_move = NodePath("../platform-moving")
 is_on_from_start = false
 ping_pong = true
 
 [node name="flag" parent="World" instance=ExtResource("7_to8ic")]
 transform = Transform3D(0.907609, 0, -0.419817, 0, 1, 0, 0.419817, 0, 0.907609, 27.4585, 3.96022, -0.68073)
-
-[node name="trap-spikes" parent="World" instance=ExtResource("8_of33o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.578, 2.71517, -4.91552)
-
-[node name="trap-spikes2" parent="World" instance=ExtResource("8_of33o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.3781, 2.71517, -4.91552)
-
-[node name="button" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("9_4yqwi")]
-transform = Transform3D(0.997099, 0, 0.0761099, 0, 1, 0, -0.0761099, 0, 0.997099, -20.392, 4.90807, 6.39096)
-target = NodePath("../moving_object_path")
-
-[node name="button2" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("9_4yqwi")]
-transform = Transform3D(0.999991, 0, 0.00434586, 0, 1, 0, -0.00434586, 0, 0.999991, -16.3423, 2.64299, 0.277611)
-target = NodePath("../door")
 
 [node name="door" parent="World" instance=ExtResource("10_wr1ga")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.6269, 2.71653, -0.659765)
@@ -157,57 +138,6 @@ open_door_with_coins = 5
 [node name="checkpoint" parent="World" instance=ExtResource("12_6susq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2835, 3.90919, -0.709862)
 
-[node name="checkpoint2" parent="World" instance=ExtResource("12_6susq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.7315, 2.80471, -1.40497)
-
-[node name="platform" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(0.993085, 0, -0.117399, 0, 1, 0, 0.117399, 0, 0.993085, -14.7193, 2.1308, 3.52329)
-
-[node name="platform9" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(0.717166, 0, -0.696903, 0, 1, 0, 0.696903, 0, 0.717166, -15.5266, 3.15296, 5.0365)
-
-[node name="platform8" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(0.98534, 0, 0.170605, 0, 1, 0, -0.170605, 0, 0.98534, -17.133, 4.06614, 5.95493)
-
-[node name="platform2" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9535, 2.20613, -1.4)
-
-[node name="platform3" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9725, 2.20613, -1.4)
-
-[node name="platform4" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.9883, 2.20613, -1.4)
-
-[node name="platform5" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.9883, 2.20613, -1.4)
-
-[node name="platform6" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.9883, 2.20613, -3.4)
-
-[node name="platform7" parent="World" instance=ExtResource("13_mgamd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.9883, 2.20613, -5.4)
-
-[node name="platform-medium" parent="World" instance=ExtResource("14_dtfo0")]
-transform = Transform3D(0.86084, 0, -0.508876, 0, 1, 0, 0.508876, 0, 0.86084, -5.83677, 1.85731, 1.13776)
-
-[node name="platform-medium2" parent="World" instance=ExtResource("14_dtfo0")]
-transform = Transform3D(0.997325, 0, 0.073099, 0, 1, 0, -0.073099, 0, 0.997325, -20.3597, 4.41057, 6.41009)
-
-[node name="platform-falling" parent="World" instance=ExtResource("15_b3n3p")]
-transform = Transform3D(0.989985, 0, -0.141178, 0, 1, 0, 0.141178, 0, 0.989985, -9.67817, 1.89327, -0.633746)
-
-[node name="platform-grass-large-round" parent="World" instance=ExtResource("16_vf7p7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.498435, 1.04456, 6.24435)
-
-[node name="platform-grass-large-round3" parent="World" instance=ExtResource("16_vf7p7")]
-transform = Transform3D(-0.989085, 0, 0.147343, 0, 1, 0, -0.147343, 0, -0.989085, -2.63518, 0.951342, 3.40817)
-
-[node name="platform-grass-large-round4" parent="World" instance=ExtResource("16_vf7p7")]
-transform = Transform3D(-0.294924, 0, 0.955521, 0, 1, 0, -0.955521, 0, -0.294924, 0.406457, 0.754891, 5.06137)
-
-[node name="coin" parent="World" instance=ExtResource("17_vpstx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.54416, 2.55254, 1.27727)
-
 [node name="cube8" parent="World" instance=ExtResource("18_l1goe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.80637, 1.10741, -2.666)
 
@@ -215,26 +145,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.80637, 1.10741, -2.666)
 transform = Transform3D(1.27593, -0.401864, 0.422933, 0.471408, 1.30937, -0.178025, -0.343721, 0.304009, 1.32582, 3.33538, 1.37146, -4.1932)
 
 [node name="cube10" parent="World" instance=ExtResource("18_l1goe")]
-transform = Transform3D(1.32811, 0.370441, 0.259369, -0.293866, 1.3186, -0.37854, -0.34372, 0.30401, 1.32582, -10.5752, 2.03819, -7.93707)
-
-[node name="cube11" parent="World" instance=ExtResource("18_l1goe")]
-transform = Transform3D(0.476646, 0.924607, 0.941422, -0.929853, 0.945559, -0.457882, -0.93624, -0.468385, 0.934042, -11.1815, 2.03819, 9.2812)
-
-[node name="cube12" parent="World" instance=ExtResource("18_l1goe")]
-transform = Transform3D(-1.02876, -0.695523, 0.652886, -0.929853, 0.945557, -0.457881, -0.213027, -0.768461, -1.15432, -10.9158, 2.79508, 11.515)
-
-[node name="cube13" parent="World" instance=ExtResource("18_l1goe")]
-transform = Transform3D(1.56209, -1.37982, 1.71508, 1.97375, 1.80907, -0.342241, -0.974547, 1.4522, 2.05595, -14.3045, 2.03819, -8.24191)
-
-[node name="cube14" parent="World" instance=ExtResource("18_l1goe")]
-transform = Transform3D(1.56209, -1.37982, 1.71508, 1.97375, 1.80907, -0.342241, -0.974547, 1.4522, 2.05595, -15.866, 2.03819, 7.83702)
+transform = Transform3D(1.32811, 0.370441, 0.259369, -0.293866, 1.3186, -0.37854, -0.34372, 0.30401, 1.32582, 21.1605, 14.752, -7.93707)
 
 [node name="trampoline" parent="World" instance=ExtResource("25_3lew4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6292, 1.84647, -0.664495)
 trampoline_strength = 11.0
-
-[node name="block-grass-hexagon2" parent="World" instance=ExtResource("20_hcccx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.1433, 0, 0.107256)
 
 [node name="block-grass-large-tall2" parent="World" instance=ExtResource("21_klkfw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.39212, -0.292929, -0.527699)
@@ -242,30 +157,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.39212, -0.292929, -0.527699
 [node name="StaticBody3D" type="StaticBody3D" parent="World/block-grass-large-tall2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/block-grass-large-tall2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015686, 0.753479, -0.0150146)
-shape = SubResource("BoxShape3D_33nes")
-
-[node name="block-grass-large2" parent="World" instance=ExtResource("22_fpryo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6824, 0, -4.49346)
-
-[node name="block-grass-long2" parent="World" instance=ExtResource("23_jm4k7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4767, -0.069991, -0.593666)
-
-[node name="block-grass-overhang-low-narrow2" parent="World" instance=ExtResource("24_jermf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.2805, -2.38419e-07, 0.107449)
-
-[node name="block-snow-long2" parent="World" instance=ExtResource("25_0r7ta")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4222, 0, 2.10658)
-
-[node name="block-snow-large2" parent="World" instance=ExtResource("26_sn0fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.924, 0, 2.64464)
-
-[node name="block-snow-large-tall2" parent="World" instance=ExtResource("27_bw5tr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76527, 0, -1.15533)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="World/block-snow-large-tall2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/block-snow-large-tall2/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015686, 0.753479, -0.0150146)
 shape = SubResource("BoxShape3D_33nes")
 
@@ -569,7 +460,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.11183, 1.62379, 9.2993, -0.821
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.83232, 9.3298, -0.748227)
 
 [node name="platform-large9" parent="World/BouncePadSection" instance=ExtResource("5_hsdt4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.05636, 16.507, -5.94799)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9501, 16.507, -5.94799)
 
 [node name="platform-large10" parent="World/BouncePadSection" instance=ExtResource("5_hsdt4")]
 transform = Transform3D(0.942868, 0, 0, 0, 0.942868, 0, 0, 0, 0.942868, 7.07849, 15.2343, -0.818714)
@@ -745,7 +636,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.1445
 transform = Transform3D(-1.10754, 0, 1.01161, 0, 1.5, 0, -1.01161, 0, -1.10754, 7.78757, 15.7343, -1.84435)
 
 [node name="arrow5" parent="World/BouncePadSection" instance=ExtResource("37_48311")]
-transform = Transform3D(-1.16428, 0, -0.94575, 0, 1.5, 0, 0.94575, 0, -1.16428, 7.78757, 15.7343, 0.233478)
+transform = Transform3D(-1.49028, 0, -0.170458, 0, 1.5, 0, 0.170458, 0, -1.49028, 7.89441, 15.7343, 0.560774)
 
 [node name="cube" parent="World/BouncePadSection" instance=ExtResource("18_l1goe")]
 transform = Transform3D(1, 0, 0, 0, 0.0896765, -0.995971, 0, 0.995971, 0.0896765, 12.8433, 19.4541, -0.380333)
@@ -764,6 +655,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5293, 12.2974, -0.967408)
 
 [node name="checkpoint" parent="World/BouncePadSection" instance=ExtResource("12_6susq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.97258, 15.7343, -0.841231)
+
+[node name="Node3D" parent="World/BouncePadSection" instance=ExtResource("37_oonmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17871, 29.7245, 5.19093)
+
+[node name="platform-grass-large-round" parent="World/BouncePadSection" instance=ExtResource("16_vf7p7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.37967, 15.7068, -5.75561)
+
+[node name="moving_object_path3" parent="World/BouncePadSection" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_u137l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2534, -2.3985, 5.54779)
+curve = SubResource("Curve3D_pvnjf")
+object_to_move = NodePath("")
+is_on_from_start = false
+ping_pong = true
+
+[node name="moving_object_path" parent="World/BouncePadSection" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_u137l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2534, -2.3985, 5.54779)
+curve = SubResource("Curve3D_2nbvl")
+object_to_move = NodePath("../platform-moving2")
+is_on_from_start = false
+ping_pong = true
+
+[node name="platform-moving2" parent="World/BouncePadSection" instance=ExtResource("4_07kdn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.32074, 16.2752, 22.6898)
+
+[node name="button2" parent="World/BouncePadSection" node_paths=PackedStringArray("target") instance=ExtResource("9_4yqwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1203, 15.7057, -0.82979)
+target = NodePath("")
 
 [node name="arrow3" parent="World" instance=ExtResource("37_48311")]
 transform = Transform3D(0.56617, 0, -0.922315, 0, 1.08223, 0, 0.922315, 0, 0.56617, 24.0736, 3.89194, -2.18571)
