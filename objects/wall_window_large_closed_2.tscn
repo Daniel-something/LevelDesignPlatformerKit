@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bul27s2ktdx0p"]
+
+[ext_resource type="PackedScene" uid="uid://boxdo8ifb73df" path="res://models/prototyping/models/wall-window-large.glb" id="1_m4evp"]
+
+[node name="wall-window-large2" instance=ExtResource("1_m4evp")]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045166, 0.507879, -0.00292969)
+size = Vector3(0.251709, 0.608154, 0.599609)
