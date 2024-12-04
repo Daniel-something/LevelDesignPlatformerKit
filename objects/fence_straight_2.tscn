@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://ca3x0hnr25xhm" path="res://models/props/fence-straight.glb" id="1_6qhiq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hdnjh"]
-size = Vector3(1, 0.547729, 1)
+size = Vector3(1, 0.547729, 0.222656)
 
 [node name="fence-straight2" instance=ExtResource("1_6qhiq")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0020436, 0.30434, 8.55327e-05)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0020436, 0.30434, 0.388757)
 shape = SubResource("BoxShape3D_hdnjh")
