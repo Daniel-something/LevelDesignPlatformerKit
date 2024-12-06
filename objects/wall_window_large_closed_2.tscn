@@ -1,9 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://bul27s2ktdx0p"]
+[gd_scene load_steps=7 format=3 uid="uid://bul27s2ktdx0p"]
 
 [ext_resource type="PackedScene" uid="uid://boxdo8ifb73df" path="res://models/prototyping/models/wall-window-large.glb" id="1_m4evp"]
+[ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="2_bmmtg"]
+[ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="3_biy8d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mh2yk"]
+albedo_texture = ExtResource("2_bmmtg")
+uv1_scale = Vector3(0.02, 0.02, 0.02)
+uv1_offset = Vector3(-1.035, 0.535, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7aqpn"]
+albedo_texture = ExtResource("3_biy8d")
+uv1_scale = Vector3(-0.15, -0.15, -0.15)
+uv1_offset = Vector3(2.74, 0.65, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ux6g7"]
 
 [node name="wall-window-large2" instance=ExtResource("1_m4evp")]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045166, 0.507879, -0.00292969)
+visible = false
 size = Vector3(0.251709, 0.608154, 0.599609)
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." index="2"]
+transform = Transform3D(0.203075, 0, 0, 0, 0.7761, 0, 0, 0, 0.733563, -0.00417988, 0.507879, -0.00292969)
+material_override = SubResource("StandardMaterial3D_mh2yk")
+material_overlay = SubResource("StandardMaterial3D_7aqpn")
+mesh = SubResource("BoxMesh_ux6g7")
+skeleton = NodePath("")

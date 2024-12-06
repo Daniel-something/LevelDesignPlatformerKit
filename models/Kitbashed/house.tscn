@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://iy83k6eor5ug"]
+
+[ext_resource type="PackedScene" uid="uid://dbr3dh46cbskt" path="res://objects/wall.tscn" id="1_4dk2d"]
+[ext_resource type="Script" path="res://objects/cloud.gd" id="1_wrc5o"]
+[ext_resource type="PackedScene" uid="uid://bdm3quh21j64k" path="res://objects/platform_large.tscn" id="2_rh87r"]
+[ext_resource type="PackedScene" uid="uid://bul27s2ktdx0p" path="res://objects/wall_window_large_closed_2.tscn" id="3_dt8xf"]
+
+[node name="DecorativeHouse" type="Node3D"]
+script = ExtResource("1_wrc5o")
+
+[node name="wall31" parent="." instance=ExtResource("1_4dk2d")]
+transform = Transform3D(1.37, 0, 0.010371, 0, 5.40623, 0, -0.00306055, 0, 4.64239, -2.03361, 0.309701, -0.795999)
+
+[node name="wall32" parent="." instance=ExtResource("1_4dk2d")]
+transform = Transform3D(1.37, 0, 0.010371, 0, 5.40623, 0, -0.00306055, 0, 4.64239, 2.32039, 0.309701, -0.805656)
+
+[node name="wall33" parent="." instance=ExtResource("1_4dk2d")]
+transform = Transform3D(0.00306057, 0, -4.64239, 0, 5.40623, 0, 1.37, 0, 0.0103711, 0.14859, 0.309701, 1.38296)
+
+[node name="wall34" parent="." instance=ExtResource("1_4dk2d")]
+transform = Transform3D(0.00306057, 0, -4.64239, 0, 5.40623, 0, 1.37, 0, 0.0103711, 0.138267, 0.309701, -2.98568)
+
+[node name="platform-large" parent="." instance=ExtResource("2_rh87r")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, 0.105402, 5.6652, -0.793991)
+
+[node name="platform-large2" parent="." instance=ExtResource("2_rh87r")]
+transform = Transform3D(0.00198125, 0, -0.886861, 0, 0.886863, 0, 0.886861, 0, 0.00198125, 0.105402, -0.0637984, -0.793991)
+
+[node name="wall-window-large2" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, -2.1764, 4.2733, 0.297648)
+
+[node name="wall-window-large3" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, -2.18134, 4.2733, -1.94182)
+
+[node name="wall-window-large4" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, -2.1764, 1.5385, 0.297648)
+
+[node name="wall-window-large5" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, -2.18134, 1.5385, -1.94182)
+
+[node name="wall-window-large6" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, 2.42643, 4.2733, 0.287365)
+
+[node name="wall-window-large7" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, 2.42149, 4.2733, -1.95211)
+
+[node name="wall-window-large8" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, 2.42643, 1.5385, 0.287365)
+
+[node name="wall-window-large9" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.999998, 0, 0.00223398, 0, 1, 0, -0.00223398, 0, 0.999998, 2.42149, 1.5385, -1.95211)
+
+[node name="wall-window-large10" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, -0.88541, 4.3871, 1.54423)
+
+[node name="wall-window-large11" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, 1.02427, 3.1993, 1.53989)
+
+[node name="wall-window-large12" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, -0.88541, 2.1213, 1.54423)
+
+[node name="wall-window-large13" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, 1.02427, 0.933601, 1.53989)
+
+[node name="wall-window-large14" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, -0.895754, 4.3871, -3.11849)
+
+[node name="wall-window-large15" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, 1.01385, 3.1993, -3.12276)
+
+[node name="wall-window-large16" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, -0.895754, 2.1213, -3.11849)
+
+[node name="wall-window-large17" parent="." instance=ExtResource("3_dt8xf")]
+transform = Transform3D(0.00223399, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00223399, 1.01385, 0.933601, -3.12276)
