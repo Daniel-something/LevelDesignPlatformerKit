@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b65l7yar2ang2"]
+[gd_scene load_steps=4 format=3 uid="uid://b65l7yar2ang2"]
 
 [ext_resource type="PackedScene" uid="uid://s1bbwujq22dg" path="res://models/props/block-grass-large-tall.glb" id="1_cp5jm"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="2_ecfpw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u58yt"]
 size = Vector3(2.08026, 1.99725, 1.94135)
 
 [node name="block-grass-large-tall2" instance=ExtResource("1_cp5jm")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+[node name="DitherObstacle" parent="." index="1" instance=ExtResource("2_ecfpw")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025238, 1.00081, 0.0284119)

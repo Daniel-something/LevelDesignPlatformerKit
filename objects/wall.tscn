@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbr3dh46cbskt"]
+[gd_scene load_steps=6 format=3 uid="uid://dbr3dh46cbskt"]
 
 [ext_resource type="PackedScene" uid="uid://2briludp3y6q" path="res://models/prototyping/models/wall.glb" id="1_jc8pj"]
 [ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="2_fs418"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="3_bwuqn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nj181"]
 albedo_texture = ExtResource("2_fs418")
@@ -17,6 +18,10 @@ size = Vector3(0.25, 1, 1)
 
 [node name="wall" parent="wall2" index="0"]
 surface_material_override/0 = SubResource("StandardMaterial3D_nj181")
+
+[node name="DitherObstacle" parent="wall2" instance=ExtResource("3_bwuqn")]
+min_distance_dither = 0.5
+max_distance_dither = 7.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

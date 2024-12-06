@@ -190,7 +190,7 @@ environment = ExtResource("1_1lrdh")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_p2a8d")]
-transform = Transform3D(0.0320564, 0, 0.999486, 0, 1, 0, -0.999486, 0, 0.0320564, 13.4412, 2.93628, -1.05022)
+transform = Transform3D(0.0320564, 0, 0.999486, 0, 1, 0, -0.999486, 0, 0.0320564, 13.4331, 2.93628, -0.798359)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -1887,7 +1887,7 @@ transform = Transform3D(0.944355, -2.15175, 3.20492, -1.0612, 3.0276, 2.34539, -
 transform = Transform3D(2.43689, 0.286022, -0.354933, -0.455038, 1.64055, -1.80215, 0.0269579, 1.83657, 1.66508, 122.117, -72.5068, -105.764)
 
 [node name="TallDecorativeHouse6" parent="World/Section4" instance=ExtResource("38_3jtsy")]
-transform = Transform3D(2.3136, 1.59041, -0.490429, -1.16233, 2.14513, 1.47312, 1.19118, -0.995836, 2.39, -109.897, 6.92214, 29.4972)
+transform = Transform3D(2.3136, 1.59041, -0.490429, -1.16233, 2.14513, 1.47312, 1.19118, -0.995836, 2.39, -139.082, 7.3053, 37.91)
 
 [node name="TallDecorativeHouse13" parent="World/Section4" instance=ExtResource("38_3jtsy")]
 transform = Transform3D(4.63857, 1.14533, 6.56087, 2.87192, 6.8698, -3.22972, -6.00907, 4.1674, 3.52094, -57.2859, 137.169, 30.1726)
@@ -1929,7 +1929,7 @@ transform = Transform3D(6.18515, 2.10353, 7.46799, 6.07446, -7.25444, -2.98762, 
 transform = Transform3D(5.4591, -3.42724, -5.53851, 3.12426, 7.71893, -1.69702, 5.7149, -0.946007, 6.21835, -39.3982, -137.165, -43.6615)
 
 [node name="TallDecorativeHouse12" parent="World/Section4" instance=ExtResource("38_3jtsy")]
-transform = Transform3D(2.66738, 0, 0, 0, 2.39003, 1.18434, 0, -1.18434, 2.39003, -96.4314, 116.309, -175.371)
+transform = Transform3D(2.62607, -0.44382, 0.147321, 0.419009, 2.60631, 0.382748, -0.207633, -0.353678, 2.63566, -96.4314, 116.309, -175.371)
 
 [node name="DecorativeHouse12" parent="World/Section4" instance=ExtResource("37_uf0uo")]
 transform = Transform3D(2.62639, -1.15877, 3.10781, 0.74795, 4.06896, 0.885048, -3.23137, -5.96046e-08, 2.73082, -143.106, 69.2611, -4.3344)
