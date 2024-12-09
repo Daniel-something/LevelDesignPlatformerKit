@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://deqtnfs0x8se7"]
+[gd_scene load_steps=2 format=3 uid="uid://deqtnfs0x8se7"]
+
+[ext_resource type="AudioStream" uid="uid://dltvyxle1nfio" path="res://sounds/level-music.mp3" id="1_pw1ph"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_pw1ph")
 volume_db = 1.0
+autoplay = true
+parameters/looping = true
