@@ -202,6 +202,7 @@ transform = Transform3D(0.0320564, 0, 0.999486, 0, 1, 0, -0.999486, 0, 0.0320564
 view = NodePath("../View")
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("3_wetpe")]
+bus = &"Music"
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
@@ -1235,7 +1236,7 @@ transform = Transform3D(0.151894, -0.00445912, -0.00427715, -0.0103189, -0.35711
 transform = Transform3D(0.151973, -0.0034918, 0.00136868, -0.00814179, -0.357145, -0.00709447, 0.000962218, 0.00199886, -0.101729, 0.0950835, 0.738584, 0.0516453)
 
 [node name="moving_object_path6" parent="World/Section3" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_u137l")]
-transform = Transform3D(0.776205, -1.15664e-08, 2.5446e-07, 1.15665e-08, 0.776217, 0.00498581, -7.42918e-11, -0.00498564, 0.776217, -33.697, -12.1185, 38.0068)
+transform = Transform3D(0.776205, -1.15664e-08, 2.5446e-07, 1.15665e-08, 0.776217, 0.00498581, -7.42926e-11, -0.00498564, 0.776217, -33.697, -12.1185, 38.0068)
 curve = SubResource("Curve3D_8mwyt")
 object_to_move = NodePath("../wall42Holder")
 ping_pong = true
@@ -1966,37 +1967,32 @@ transform = Transform3D(2.62639, -1.15877, 3.10781, 0.74795, 4.06896, 0.885048, 
 
 [node name="Clock" parent="." instance=ExtResource("45_gy0ci")]
 transform = Transform3D(2.02067, 0, 0, 0, 1.73262, 1.03979, 0, -1.03979, 1.73262, 44.1511, 37.4707, -21.9832)
+visible = false
 
 [node name="Clock2" parent="." instance=ExtResource("45_gy0ci")]
 transform = Transform3D(2.02067, 0, 0, 0, 1.77563, 0.964491, 0, -0.964491, 1.77563, 44.1511, 31.82, -32.0663)
+visible = false
 
 [node name="wall-window-large18" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.510543, 0.859852, 0, -0.859852, -0.510543, -4.37114e-08, 44.1511, 38.5356, -22.238)
-visible = false
 
 [node name="wall-window-large19" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.510543, 0.859852, 0, -0.859852, -0.510543, -4.37114e-08, 44.1511, 35.0981, -20.197)
-visible = false
 
 [node name="wall-window-large22" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.510543, 0.859852, 0, -0.859852, -0.510543, -4.37114e-08, 44.1511, 37.8841, -23.5085)
-visible = false
 
 [node name="wall-window-large23" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.510543, 0.859852, 0, -0.859852, -0.510543, -4.37114e-08, 44.1511, 34.4466, -21.4675)
-visible = false
 
 [node name="wall-window-large20" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.473919, 0.880568, 1.83883e-09, -0.880568, -0.473919, -4.36727e-08, 44.1511, 33.4177, -31.7259)
-visible = false
 
 [node name="wall-window-large21" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.473919, 0.880568, 1.83883e-09, -0.880568, -0.473919, -4.36727e-08, 44.1511, 29.8975, -29.8313)
-visible = false
 
 [node name="wall-window-large24" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.458014, 0.888945, 2.62359e-09, -0.888945, -0.458014, -4.36326e-08, 44.1511, 32.6187, -32.9241)
-visible = false
 
 [node name="wall-window-large25" parent="." instance=ExtResource("42_xfegn")]
 transform = Transform3D(-3.75853e-08, -2.23165e-08, 1, -0.458014, 0.888945, 2.62359e-09, -0.888945, -0.458014, -4.36326e-08, 44.1511, 29.0649, -31.0931)
