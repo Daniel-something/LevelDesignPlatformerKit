@@ -1,0 +1,441 @@
+[gd_scene load_steps=24 format=3 uid="uid://cljdc7lpelujb"]
+
+[ext_resource type="PackedScene" uid="uid://bdm3quh21j64k" path="res://objects/platform_large.tscn" id="9_x5nuq"]
+[ext_resource type="PackedScene" uid="uid://dbr3dh46cbskt" path="res://objects/wall.tscn" id="10_bfryd"]
+[ext_resource type="PackedScene" uid="uid://ytqajrdi7fqj" path="res://objects/trampoline.tscn" id="14_lvndg"]
+[ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="17_5m31a"]
+[ext_resource type="PackedScene" uid="uid://cyvet7kb6y80r" path="res://objects/checkpoint.tscn" id="19_p67mh"]
+[ext_resource type="PackedScene" uid="uid://bs65o07otxbmm" path="res://objects/moving_object_path_3d.tscn" id="24_1mtoq"]
+[ext_resource type="PackedScene" uid="uid://b0pmuh0tjooy7" path="res://objects/platform_fortified_2.tscn" id="26_2671t"]
+[ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="35_k8mj3"]
+[ext_resource type="PackedScene" uid="uid://ch1gmvh3uwk30" path="res://objects/platform_overhang_2.tscn" id="39_67o35"]
+[ext_resource type="PackedScene" uid="uid://dq7raktq2uc7u" path="res://objects/fence_straight_2.tscn" id="41_bvr4p"]
+
+[sub_resource type="Curve3D" id="Curve3D_45m2p"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -33.1643, 26.8342, -84.1834, 0, 0, 0, 0, 0, 0, -33.1643, 22.218, -84.2065),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_fmn7j"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -35.9021, 23.7573, -80.562, 0, 0, 0, 0, 0, 0, -35.9021, 28.3736, -80.539),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_0ib0h"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -33.1643, 29.7247, -76.7332, 0, 0, 0, 0, 0, 0, -33.1643, 25.1085, -76.7562),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xyscl"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -32.7864, 35.3757, -71.5366, 0, 0, 0, 0, 0, 0, -32.786, 35.376, -76.991),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_23q1u"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -33.8008, 35.3757, -71.5366, 0, 0, 0, 0, 0, 0, -33.8008, 35.3757, -76.9913),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_umiyf"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -27.2373, 32.873, -82.4816, 0, 0, 0, 0, 0, 0, -27.2373, 32.873, -74.9505),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_yv462"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13.898, 41.5127, -70.208, 0, 0, 0, 0, 0, 0, -13.898, 39.1437, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_5hq2i"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -15.9713, 39.1437, -70.208, 0, 0, 0, 0, 0, 0, -15.9713, 41.5127, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_21mf1"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -18.065, 41.5127, -70.208, 0, 0, 0, 0, 0, 0, -18.065, 39.1437, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_faicp"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -20, 39.144, -70.208, 0, 0, 0, 0, 0, 0, -20, 41.513, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_vnbff"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -22, 41.513, -70.208, 0, 0, 0, 0, 0, 0, -22, 39.144, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_jw2lr"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -22, 42.625, -70.208, 0, 0, 0, 0, 0, 0, -13.898, 42.625, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_rirsg"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13.898, 42.625, -70.208, 0, 0, 0, 0, 0, 0, -22, 42.625, -70.208),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="Node3D" type="Node3D"]
+
+[node name="NewLevelAddition" type="Node3D" parent="."]
+
+[node name="platform-fortified13" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(3.13067, 0, 0, 0, 3.13067, 0, 0, 0, 3.13068, -33.1643, 24.4755, -88.0473)
+
+[node name="platform-fortified14" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-1.36846e-07, 0, 3.13068, 0, 3.13067, 0, -3.13067, 0, -1.36846e-07, -33.1643, 30.1386, -72.7431)
+
+[node name="platform-fortified15" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -33.2123, 35.389, -69.6266)
+
+[node name="moving_object_path" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_45m2p")
+object_to_move = NodePath("../trampoline10")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline10" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0647, 14381.8, -86.3873)
+trampoline_strength = 12.0
+
+[node name="moving_object_path2" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_fmn7j")
+object_to_move = NodePath("../trampoline11")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline11" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0647, 14381.8, -86.3873)
+trampoline_strength = 12.0
+
+[node name="moving_object_path3" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_0ib0h")
+object_to_move = NodePath("../trampoline12")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline12" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0647, 14381.8, -86.3873)
+trampoline_strength = 12.0
+
+[node name="platform-overhang2" parent="NewLevelAddition" instance=ExtResource("39_67o35")]
+transform = Transform3D(3.21868e-08, -1.57486, -2.19206, 0, 2.19206, -1.57486, 2.69913, 1.878e-08, 2.614e-08, -35.4403, 28.912, -72.705)
+
+[node name="checkpoint" parent="NewLevelAddition" instance=ExtResource("19_p67mh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.4183, 30.7776, -72.7468)
+
+[node name="trampoline" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.318, 30.3755, -69.0928)
+trampoline_strength = 12.0
+
+[node name="trampoline2" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.318, 32.8377, -66.9736)
+trampoline_strength = 12.0
+
+[node name="trampoline3" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.318, 34.7205, -72.2576)
+trampoline_strength = 12.0
+
+[node name="trampoline4" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.318, 34.7205, -76.5388)
+trampoline_strength = 12.0
+
+[node name="moving_object_path4" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_xyscl")
+object_to_move = NodePath("../saw")
+movement_speed = 2.5
+ping_pong = true
+
+[node name="saw" parent="NewLevelAddition" instance=ExtResource("35_k8mj3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.2709, 3684.64, -69.0459)
+
+[node name="moving_object_path5" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_23q1u")
+object_to_move = NodePath("../saw2")
+movement_speed = 2.5
+ping_pong = true
+
+[node name="saw2" parent="NewLevelAddition" instance=ExtResource("35_k8mj3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.2709, 3684.64, -69.0459)
+
+[node name="platform-fortified16" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -33.2123, 37.1752, -78.9574)
+
+[node name="platform-fortified17" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -30.9391, 37.1752, -78.9574)
+
+[node name="platform-fortified18" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -28.7151, 37.1752, -78.9574)
+
+[node name="platform-fortified19" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -26.465, 37.1752, -78.9574)
+
+[node name="trampoline5" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5044, 34.9614, -76.8278)
+trampoline_strength = 12.0
+
+[node name="trampoline6" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5044, 34.9614, -80.9427)
+trampoline_strength = 12.0
+
+[node name="moving_object_path6" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_umiyf")
+object_to_move = NodePath("../trampoline7")
+movement_speed = 1.5
+ping_pong = true
+
+[node name="trampoline7" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5044, 1922.5, -174.563)
+trampoline_strength = 12.0
+
+[node name="coin" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 35.8697, -78.9895)
+
+[node name="coin2" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 35.8697, -78.0306)
+
+[node name="coin6" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 36.4146, -79.4047)
+
+[node name="coin7" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 36.4146, -78.4459)
+
+[node name="coin3" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 35.8697, -77.049)
+
+[node name="coin4" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 35.8697, -79.7474)
+
+[node name="coin5" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.237, 35.8697, -80.5819)
+
+[node name="trampoline8" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9501, 36.642, -79.038)
+trampoline_strength = 12.0
+
+[node name="trampoline9" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 38.495, -81.0616)
+trampoline_strength = 12.0
+
+[node name="trampoline13" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9814, 36.6417, -79.0379)
+trampoline_strength = 12.0
+
+[node name="trampoline14" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 38.495, -77.1641)
+trampoline_strength = 12.0
+
+[node name="platform-fortified20" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -11.6039, 39.4256, -78.9574)
+
+[node name="platform-fortified21" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.91897e-08, 0, 2.2692, 0, 2.2692, 0, -2.2692, 0, -9.91899e-08, -13.8854, 39.4256, -78.9574)
+
+[node name="platform-fortified23" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-9.6936e-08, -0.480969, 2.21764, -2.10238e-08, 2.21764, 0.480971, -2.2692, -3.86093e-15, -9.91899e-08, -15.9244, 39.1707, -78.9574)
+
+[node name="platform-fortified22" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(-2.2692, 0, -1.9838e-07, 0, 2.2692, 0, 1.98379e-07, 0, -2.2692, -13.8854, 39.4256, -76.7078)
+
+[node name="coin8" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 39.4941, -79.038)
+
+[node name="coin9" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 38.607, -79.038)
+
+[node name="coin10" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 40.3586, -79.038)
+
+[node name="coin11" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 41.1941, -79.038)
+
+[node name="coin12" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9291, 42.1616, -79.038)
+
+[node name="checkpoint2" parent="NewLevelAddition" instance=ExtResource("19_p67mh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.911, 39.8888, -78.8777)
+
+[node name="fence-straight2" parent="NewLevelAddition" instance=ExtResource("41_bvr4p")]
+transform = Transform3D(-6.42291e-08, 0.851673, -1.46939, 3.72278e-08, 1.46939, 0.851673, 1.69837, -1.78349e-16, -7.4238e-08, -16.8111, 38.3115, -78.8648)
+
+[node name="fence-straight3" parent="NewLevelAddition" instance=ExtResource("41_bvr4p")]
+transform = Transform3D(-8.16618e-08, 1.8682, 8.16618e-08, 0, -8.16618e-08, 1.8682, 1.8682, 8.16618e-08, 3.56955e-15, -10.4795, 39.0513, -78.9577)
+
+[node name="trampoline15" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8976, 39.2174, -73.6617)
+trampoline_strength = 12.0
+
+[node name="moving_object_path7" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_yv462")
+object_to_move = NodePath("../trampoline16")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline16" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.898, 117.002, -70.208)
+trampoline_strength = 12.0
+
+[node name="moving_object_path8" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_5hq2i")
+object_to_move = NodePath("../trampoline17")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline17" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.898, 117.002, -70.208)
+trampoline_strength = 12.0
+
+[node name="moving_object_path9" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_21mf1")
+object_to_move = NodePath("../trampoline18")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline18" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.898, 117.002, -70.208)
+trampoline_strength = 12.0
+
+[node name="moving_object_path10" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_faicp")
+object_to_move = NodePath("../trampoline19")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline19" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.898, 117.002, -70.208)
+trampoline_strength = 12.0
+
+[node name="moving_object_path11" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_vnbff")
+object_to_move = NodePath("../trampoline20")
+movement_speed = 2.0
+ping_pong = true
+
+[node name="trampoline20" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.898, 117.002, -70.208)
+trampoline_strength = 12.0
+
+[node name="moving_object_path12" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_jw2lr")
+object_to_move = NodePath("../saw3")
+movement_speed = 1.5
+ping_pong = true
+
+[node name="saw3" parent="NewLevelAddition" instance=ExtResource("35_k8mj3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3924, 96.7283, -72.9217)
+
+[node name="moving_object_path13" parent="NewLevelAddition" node_paths=PackedStringArray("object_to_move") instance=ExtResource("24_1mtoq")]
+curve = SubResource("Curve3D_rirsg")
+object_to_move = NodePath("../saw4")
+movement_speed = 1.5
+ping_pong = true
+
+[node name="saw4" parent="NewLevelAddition" instance=ExtResource("35_k8mj3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3924, 96.7283, -72.9217)
+
+[node name="platform-fortified24" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(2.2692, 0, 0, 0, 2.2692, 0, 0, 0, 2.2692, -24.6196, 40.4742, -67.3193)
+
+[node name="platform-fortified26" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(2.2692, 0, 0, 0, 2.2692, 0, 0, 0, 2.2692, -24.6196, 40.4742, -65.1356)
+
+[node name="platform-fortified27" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(2.2692, 0, 0, 0, 2.2692, 0, 0, 0, 2.2692, -24.6196, 40.4742, -62.8848)
+
+[node name="platform-fortified25" parent="NewLevelAddition" instance=ExtResource("26_2671t")]
+transform = Transform3D(2.2692, 0, 0, 0, 2.2692, 0, 0, 0, 2.2692, -24.6196, 40.4742, -69.5751)
+
+[node name="trampoline21" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(2.58227, 0, 0, 0, 2.58227, 0, 0, 0, 2.58227, -24.62, 38.441, -59.652)
+trampoline_strength = 32.0
+
+[node name="platform-large2" parent="NewLevelAddition" instance=ExtResource("9_x5nuq")]
+transform = Transform3D(1.77752, 0, 0, 0, 0.790099, 0, 0, 0, 1.77752, -20.4915, 52.366, -76.3546)
+
+[node name="wall5" parent="NewLevelAddition" instance=ExtResource("10_bfryd")]
+transform = Transform3D(-1.09608e-07, 0, 8.28434, 0, 3.06636, 0, -2.50753, 0, -3.62118e-07, -20.4252, 49.4485, -72.3785)
+
+[node name="wall6" parent="NewLevelAddition" instance=ExtResource("10_bfryd")]
+transform = Transform3D(-1.09608e-07, 0, 8.28434, 0, 3.06636, 0, -2.50753, 0, -3.62118e-07, -20.4252, 49.4485, -80.35)
+
+[node name="wall7" parent="NewLevelAddition" instance=ExtResource("10_bfryd")]
+transform = Transform3D(-2.50753, 0, -7.2424e-07, 0, 3.06636, 0, 2.19215e-07, 0, -8.28434, -16.5397, 49.4485, -76.3539)
+
+[node name="wall8" parent="NewLevelAddition" instance=ExtResource("10_bfryd")]
+transform = Transform3D(-2.50753, 0, -7.2424e-07, 0, 3.06636, 0, 2.19215e-07, 0, -8.28434, -24.3148, 49.4485, -76.2776)
+
+[node name="trampoline22" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6077, 49.7768, -71.0347)
+trampoline_strength = 12.0
+
+[node name="trampoline23" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6077, 49.7768, -81.6154)
+trampoline_strength = 12.0
+
+[node name="trampoline24" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5911, 49.7768, -76.4174)
+trampoline_strength = 12.0
+
+[node name="trampoline25" parent="NewLevelAddition" instance=ExtResource("14_lvndg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.243, 49.7768, -76.4174)
+trampoline_strength = 12.0
+
+[node name="coin13" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.833, 42.8902, -70.208)
+
+[node name="coin14" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.0149, 43.7491, -70.208)
+
+[node name="coin15" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.0137, 42.8902, -70.208)
+
+[node name="coin16" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.9565, 43.7491, -70.208)
+
+[node name="coin17" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.9707, 42.8902, -70.208)
+
+[node name="coin18" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3007, 32.2045, -75.4992)
+
+[node name="coin21" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3007, 37.3965, -74.3685)
+
+[node name="coin22" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3007, 36.799, -75.4502)
+
+[node name="coin23" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3007, 36.799, -73.3707)
+
+[node name="coin19" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.4621, 30.2311, -78.823)
+
+[node name="coin20" parent="NewLevelAddition" instance=ExtResource("17_5m31a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.6465, 28.9367, -82.3651)
