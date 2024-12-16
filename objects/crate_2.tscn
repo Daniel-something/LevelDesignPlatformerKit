@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmpp5x6rj8el6"]
+
+[ext_resource type="PackedScene" uid="uid://cte7gcfhvygfi" path="res://models/props/crate.glb" id="1_qw3y1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q62cy"]
+size = Vector3(0.491802, 0.489975, 0.499329)
+
+[node name="crate2" instance=ExtResource("1_qw3y1")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="crate" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="crate/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00717354, 0.247093, -0.00149536)
+shape = SubResource("BoxShape3D_q62cy")
